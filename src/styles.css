@@ -185,6 +185,12 @@ h1 {
   color: white;
 }
 
+.banner button {
+  border: 1px solid white;
+  padding: 0 1em;
+  border-radius: 2px;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -229,4 +235,42 @@ h1 {
   to {
     transform: translateY(0%);
   }
+}
+
+.keyboard .key-row {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard .key {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-100);
+  font-weight: 700;
+  width: var(--game-spacing);
+  height: var(--game-spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  border-radius: 4px;
+}
+.keyboard .key.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.keyboard .key.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.keyboard .key.used {
+  background: var(--color-gray-500);
+  border-color: var(--color-gray-500);
+  color: white;
+}
+.keyboard .key.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
 }
